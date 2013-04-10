@@ -23,34 +23,16 @@ describe "Static pages" do
   describe "About page" do
     before { visit about_path }
 
-    it "should have the h1 'About Us'" do
-      page.should have_selector('h1', :text => 'About Us')
-    end
-
-    it "should have the base title" do
-      page.should have_selector('title',
-                        :text => "Ruby on Rails Tutorial Sample App")
-    end
-
-    it "should not have a custom page title" do
-      page.should_not have_selector('title', :text => '| About')
-    end
+    it { should have_selector('h1', :text => 'About Us') }
+    it { should have_selector('title', :text => full_title('')) }
+    it { should_not have_selector('title', :text => '| About') }
   end
 
   describe "Contact page" do
     before { visit contact_path }
 
-    it "should have the h1 'Contact'" do
-      page.should have_selector('h1', :text => 'Contact')
-    end
-
-    it "should have the base title" do
-      page.should have_selector('title',
-                        :text => "Ruby on Rails Tutorial Sample App")
-    end
-
-    it "should not have a custom page title" do
-      page.should_not have_selector('title', :text => '| Contact')
-    end
+    it { should have_selector('h1', :text => 'Contact') }
+    it { should have_selector('title', :text => full_title('')) }
+    it { should_not have_selector('title', :text => '| Contact') }
   end
 end
