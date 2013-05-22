@@ -1,0 +1,94 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (9.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (9.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (36.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+
+
+Started GET "/" for 10.0.2.2 at 2013-05-22 20:16:17 +0100
+Connecting to database specified by database.yml
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (10.0ms)
+Compiled custom.css  (3088ms)  (pid 1506)
+Compiled static_pages.css  (21ms)  (pid 1506)
+Compiled users.css  (27ms)  (pid 1506)
+Compiled application.css  (3423ms)  (pid 1506)
+Compiled jquery.js  (4ms)  (pid 1506)
+Compiled jquery_ujs.js  (0ms)  (pid 1506)
+Compiled static_pages.js  (772ms)  (pid 1506)
+Compiled users.js  (265ms)  (pid 1506)
+Compiled application.js  (1519ms)  (pid 1506)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 6121ms (Views: 6120.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-05-22 20:16:44 +0100
+Served asset /application.css - 304 Not Modified (91ms)
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-05-22 20:16:53 +0100
+Served asset /custom.css - 200 OK (28ms)
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2013-05-22 20:16:54 +0100
+Served asset /users.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-05-22 20:16:54 +0100
+Served asset /static_pages.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-05-22 20:16:54 +0100
+Served asset /jquery.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2013-05-22 20:16:55 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2013-05-22 20:17:13 +0100
+Served asset /users.js - 200 OK (12ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 10.0.2.2 at 2013-05-22 20:17:14 +0100
+Served asset /static_pages.js - 200 OK (13ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2013-05-22 20:17:24 +0100
+Served asset /application.js - 200 OK (49ms)
+
+
+Started GET "/assets/rails.png" for 10.0.2.2 at 2013-05-22 20:17:45 +0100
+Served asset /rails.png - 304 Not Modified (100ms)
+
+
+Started GET "/signup" for 10.0.2.2 at 2013-05-22 20:17:47 +0100
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (50.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 273ms (Views: 272.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2013-05-22 20:18:08 +0100
+Served asset /application.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/custom.css?body=1" for 10.0.2.2 at 2013-05-22 20:18:08 +0100
+Served asset /custom.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 10.0.2.2 at 2013-05-22 20:18:18 +0100
+Served asset /static_pages.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2013-05-22 20:18:18 +0100
+Served asset /users.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2013-05-22 20:18:18 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
